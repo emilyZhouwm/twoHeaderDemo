@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="TwoHeaderView" id="iN0-l3-epB" customClass="TwoHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEU-kB-IRt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCa-4n-pAH">
+                            <rect key="frame" x="0.0" y="-44" width="375" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自然科学0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4X-er-wdx">
+                                    <rect key="frame" x="22" y="13" width="331" height="18"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="1Wv-HQ-2rX"/>
+                                <constraint firstItem="j4X-er-wdx" firstAttribute="leading" secondItem="rCa-4n-pAH" secondAttribute="leading" constant="22" id="9Y1-hb-38z"/>
+                                <constraint firstItem="j4X-er-wdx" firstAttribute="centerY" secondItem="rCa-4n-pAH" secondAttribute="centerY" id="hXt-mT-y8S"/>
+                                <constraint firstAttribute="trailing" secondItem="j4X-er-wdx" secondAttribute="trailing" constant="22" id="yw4-Mh-OZh"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社会活动0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL7-OE-QiK">
+                            <rect key="frame" x="22" y="13.5" width="331" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rCa-4n-pAH" firstAttribute="leading" secondItem="YEU-kB-IRt" secondAttribute="leading" id="J2u-4n-uBT"/>
+                        <constraint firstItem="rCa-4n-pAH" firstAttribute="top" secondItem="YEU-kB-IRt" secondAttribute="top" constant="-44" id="TAi-Jf-MoK"/>
+                        <constraint firstItem="bL7-OE-QiK" firstAttribute="leading" secondItem="YEU-kB-IRt" secondAttribute="leading" constant="22" id="X6s-jQ-WDT"/>
+                        <constraint firstAttribute="trailing" secondItem="rCa-4n-pAH" secondAttribute="trailing" id="aCP-aS-KoJ"/>
+                        <constraint firstAttribute="height" constant="44" id="cBA-aO-J4w"/>
+                        <constraint firstItem="bL7-OE-QiK" firstAttribute="centerY" secondItem="YEU-kB-IRt" secondAttribute="centerY" id="cHf-gX-Xgi"/>
+                        <constraint firstAttribute="trailing" secondItem="bL7-OE-QiK" secondAttribute="trailing" constant="22" id="oW5-K8-kqG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YEU-kB-IRt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="37L-a0-Z8Q"/>
+                <constraint firstItem="YEU-kB-IRt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="S1G-bB-sPs"/>
+                <constraint firstAttribute="trailing" secondItem="YEU-kB-IRt" secondAttribute="trailing" id="kwY-eK-v0z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="oneLbl" destination="j4X-er-wdx" id="yeL-Wn-1WI"/>
+                <outlet property="oneView" destination="rCa-4n-pAH" id="UpH-C5-g0h"/>
+                <outlet property="twoLbl" destination="bL7-OE-QiK" id="jra-tc-Ibn"/>
+            </connections>
+        </view>
+    </objects>
+</document>
